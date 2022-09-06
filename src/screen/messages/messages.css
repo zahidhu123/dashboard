@@ -4,7 +4,7 @@
 }
 .active-wrapper{
     background-color: #ffffff;
-    padding: 25px 25px 0px 25px;
+    padding: 25px 25px 20px 25px;
     height: 86vh;
 }
 .search-inp-box{
@@ -16,20 +16,30 @@
     width: 30px;
     height: 30px;
     border-radius: 50px;
+    cursor: pointer;
 }
 .title-name{
     font-size: 14px;
     line-height: 16px;
+    cursor: pointer;
 }
 .title-subheading {
     font-size: 11px;
     font-weight: 600;
+    cursor: pointer;
+}
+.title-subheading1 {
+    font-size: 11px;
+    font-weight: 400;
+    color: gray;
+    cursor: pointer;
 }
 .real-time{
     font-size: 8px;
     color: gray;
     font-weight: 600;
     text-align: end;
+    cursor: pointer;
 }
 .num-style {
     font-size: 10px;
@@ -42,4 +52,57 @@
     justify-content: center;
     border-radius: 50px;
     color: white;
+}
+
+.profile-img{
+    width: 100%;
+    height:220px;
+}
+.fisher-wrapper{
+    position: absolute;
+    bottom: 0px;
+    color: white;
+}
+.profile-name{
+    font-size: 20px;
+}
+.profile-time{
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.active-wrapper1{
+    background-color: #ffffff;
+    height: 86vh;
+}
+
+.contact-info{
+    color: blue;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.email-title{
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 600;
+    color: gray;
+}
+
+.email-address{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.attachment-wrapper{ 
+    border-top: 2px solid darkgray;
+}
+.teeth{
+    width: 60px;
+    height: 60px;
+}
+
+.patient-nav1 {
+    width: 100%;
+    height: 60px;
 }
