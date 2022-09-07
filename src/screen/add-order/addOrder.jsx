@@ -31,118 +31,93 @@ export default function AddOrder() {
                 <form action="">
                   <div className="row">
                     <div className="col-md-4">
-                      <h1 className="header-1 ">Personal Info</h1>
+                      <h1 className="header-1 ">Add Room Booking</h1>
                     </div>
                   </div>
                   <div className="row">
                     <div className="col-lg-4">
                       <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Enter Number' />
-                      </div>
-                    </div>
-                    <div className="col-lg-4">
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Mobile</label>
-                        <input type="number" class="form-control" id="exampleInputPassword1" placeholder='Enter Mobile Number' />
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='Name' />
                       </div>
                     </div>
                     <div className="col-lg-4">
                       <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Email</label>
-                        <input type="number" class="form-control" id="exampleInputPassword1" placeholder='Enter Email Address' />
+                        <input type="email" class="form-control" id="exampleInputPassword1" placeholder='Email' />
+                      </div>
+                    </div>
+                    <div className="col-lg-4">
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Mobile Number</label>
+                        <input type="number" class="form-control" id="exampleInputPassword1" placeholder='Mobile Number' />
+                      </div>
+                    </div>
+                    <div className="col-lg-4">
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">City</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder='City' />
+                      </div>
+                    </div>
+                    <div className="col-lg-4">
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Arrive</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder='Arrive' />
+                      </div>
+                    </div>
+                    <div className="col-lg-4">
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Depart</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder='Depart' />
                       </div>
                     </div>
                     <div className="col-md-4 mb-4">
                       <label htmlFor="exampleFormControlInput1" className="form-label label-resize">
-                        Batch
+                        Gender
                       </label>
                       <select class="form-select form-control1" id="exampleFormControlInput1">
-                        <option selected>Staff</option>
-                        <option value="1">Staff</option>
-                        <option value="2">Staff</option>
+                        <option selected></option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
                       </select>
                     </div>
                     <div className="col-md-4 mb-4">
                       <label htmlFor="exampleFormControlInput1" className="form-label label-resize">
-                        Membership
+                        No of Persons
                       </label>
                       <select class="form-select form-control1" id="exampleFormControlInput1">
-                        <option selected>eleanoraguilar@gmail.com</option>
-                        <option value="1">eleanoraguilar@gmail.com</option>
-                        <option value="2">eleanoraguilar@gmail.com</option>
-                      </select>
-                    </div>
-
-                    <div className="col-md-4 mb-4">
-                      <label htmlFor="exampleFormControlInput1" className="form-label label-resize">
-                        Plan
-                      </label>
-                      <select class="form-select form-control1" id="exampleFormControlInput1">
-                        <option selected>WinDon Technologies Pvt</option>
-                        <option value="1">WinDon Technologies Pvt</option>
-                        <option value="2">WinDon Technologies Pvt</option>
+                        <option selected>1</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="2">3</option>
+                        <option value="2">4</option>
+                        <option value="2">5</option>
+                        <option value="2">6</option>
                       </select>
                     </div>
 
                     <div className="col-md-4 mb-4">
                       <label htmlFor="exampleFormControlInput1" className="form-label label-resize">
-                        Trainer
+                        Room Type
                       </label>
                       <select class="form-select form-control1" id="exampleFormControlInput1">
-                        <option selected>Staff</option>
-                        <option value="1">Staff</option>
-                        <option value="2">Staff</option>
+                        <option selected></option>
+                        <option value="1">Single</option>
+                        <option value="1">Double</option>
+                        <option value="1">Queen</option>
+                        <option value="2">King</option>
                       </select>
                     </div>
-
-                    <div className="col-md-4 mb-4">
-                      <label htmlFor="exampleFormControlInput1" className="form-label label-resize">
-                        Discount %
-                      </label>
-                      <select class="form-select form-control1" id="exampleFormControlInput1">
-                        <option selected>eleanoraguilar@gmail.com</option>
-                        <option value="1">eleanoraguilar@gmail.com</option>
-                        <option value="2">eleanoraguilar@gmail.com</option>
-                      </select>
-                    </div>
-
-                    <div className="col-md-4 mb-4">
-                      <label htmlFor="exampleFormControlInput1" className="form-label label-resize">
-                        State
-                      </label>
-                      <select class="form-select form-control1" id="exampleFormControlInput1">
-                        <option selected>WinDon Technologies Pvt</option>
-                        <option value="1">WinDon Technologies Pvt</option>
-                        <option value="2">WinDon Technologies Pvt</option>
-                      </select>
-                    </div>
-
-                    <div className="col-md-4 mb-4">
-                      <label htmlFor="exampleFormControlInput1" className="form-label label-resize">
-                        City
-                      </label>
-                      <select class="form-select form-control1" id="exampleFormControlInput1">
-                        <option selected>WinDon Technologies Pvt</option>
-                        <option value="1">WinDon Technologies Pvt</option>
-                        <option value="2">WinDon Technologies Pvt</option>
-                      </select>
-                    </div>
-
-                    <div className="col-md-4 mb-4">
-                      <label htmlFor="exampleFormControlInput1" className="form-label label-resize">
-                        Country
-                      </label>
-                      <select class="form-select form-control1" id="exampleFormControlInput1">
-                        <option selected>WinDon Technologies Pvt</option>
-                        <option value="1">WinDon Technologies Pvt</option>
-                        <option value="2">WinDon Technologies Pvt</option>
-                      </select>
+                    <div className="col-lg-12">
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Comment</label>
+                        <textarea type="text" class="form-control" rows={5} id="exampleInputPassword1" placeholder='comment' />
+                      </div>
                     </div>
                   </div>
                   <div className="row mt-4">
                     <div className="col-md-4">
-                      <Button label="Add" class="btn-primary me-2 w-100" type="submit" />
+                      <Button label="Add" class="btn-primary me-2" type="submit" />
                     </div>
                   </div>
                 </form>

@@ -35,3 +35,14 @@
   .rounded-icon.green svg {
     color: var(--green);
   }
+
+  .order-st{
+    font-size: 17px;
+    font-weight: 400;
+    color: gray;
+  }
+
+  .booking-img{
+    width: 25px;
+    
+  }
