@@ -139,6 +139,12 @@
     font-size: 11px;
     padding-right: 10px;
 }
+.receiver-time p {
+    color: #c7ccd2;
+    margin-bottom: 0px;
+    font-size: 11px;
+    padding-right: 10px;
+}
 
 
 .receiver-area {
@@ -197,4 +203,11 @@
     color: #0d53fd;
     cursor: pointer;
 }
+
+
+
+
+/* .user-active-wrapper{
+    padding: 25px 25px 0px 25px;
+} */
 

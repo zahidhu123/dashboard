@@ -146,8 +146,8 @@ export default function Messages() {
                             <img src={Patient} alt="" className='receiver-photo' />
                           </div>
                           <p className='receiver-content'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, alias itaque accusamus et laborum voluptatibus ut tempora exercitationem earum nesciunt?</p>
-                          <div className=''>
-                            <p>10.20 pm</p>
+                          <div className='receiver-time'>
+                            <p className=''>10.20 pm</p>
                           </div>
                         </div>
 
@@ -167,11 +167,11 @@ export default function Messages() {
                     <div className='d-flex'>
                       <div className='d-flex w-75 align-items-center'>
                         <i class="fa-regular fa-face-smile smile"></i>
-                        <input type="text" className='search-message m-0 w-100'  placeholder='Type a Message...'/>
+                        <input type="text" className='search-message m-0 w-100' placeholder='Type a Message...' />
                       </div>
                       <div className='d-flex justify-content-end w-25'>
                         <i class="fa-solid fa-paperclip smile"></i>
-                        <MdSend className='send-buton ms-2 '  />
+                        <MdSend className="send-buton ms-2 " />
                       </div>
                     </div>
                   </div>
