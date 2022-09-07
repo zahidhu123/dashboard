@@ -45,41 +45,23 @@ function getDoctorDetail() {
           <div className=''>
              <NavLink to="/overview"  className={({ isActive }) => (isActive ? 'active-tab' : 'inactive-tab')}><i className="fa-regular fa-circle-question px-2 pe-2"></i>Overview</NavLink>
           </div>
-          <div className=''>
-             <NavLink to="/calender"  className={({ isActive }) => (isActive ? 'active-tab' : 'inactive-tab')}><i className="fa-solid fa-calendar px-2 pe-2"></i>Calender</NavLink>
-          </div>
+        
           <div className=' w-100'>
-             <NavLink to="/patientList/upcomingAppoinments"  className={({ isActive }) => (isActive ? 'active-tab' : 'inactive-tab')} ><i className="fa-regular fa-user px-2 "></i>Patient List</NavLink>
+             <NavLink to="/order-list"  className={({ isActive }) => (isActive ? 'active-tab' : 'inactive-tab')} ><i className="fa-regular fa-user px-2 "></i>View Booking List</NavLink>
           </div>
           <div className=''>
-              <NavLink to="/messages"  className={({ isActive }) => (isActive ? 'active-tab' : 'inactive-tab')}><i className="fa-regular fa-comment-dots px-2 pe-2"></i>Messages</NavLink>
+              <NavLink to="/messages"  className={({ isActive }) => (isActive ? 'active-tab' : 'inactive-tab')}><i className="fa-regular fa-comment-dots px-2 pe-2"></i>Chat Support</NavLink>
           </div>
           <div className=''>
-             <NavLink to="/paymentInformation"  className={({ isActive }) => (isActive ? 'active-tab' : 'inactive-tab')}><i className="fa-solid fa-sack-dollar px-2 pe-2"></i>Payment information</NavLink>
+             <NavLink to="/add-order"  className={({ isActive }) => (isActive ? 'active-tab' : 'inactive-tab')}><i className="fa-solid fa-sack-dollar px-2 pe-2"></i>Add Booking</NavLink>
           </div>
-          <div className=''>
-           <NavLink to="/setting"  className={({ isActive }) => (isActive ? 'active-tab' : 'inactive-tab')}><i className="fa-solid fa-sliders px-2 pe-2"></i>Setting</NavLink>
-          </div>
+         
 
        </div>
        </div>
        <div>
          <p className=' text-secondary fs-14 fw-500 ps-4'> <i className="fa-solid fa-circle-info pe-2"></i>Help ?</p>
-         <div className='doctor-detail-wrapper'>
-                <div className='d-flex '>
-                    <div className='doctor-img-wrapper'>
-                     <img src={doctorImg} alt=""  className='doctor-img'/>
-                    </div>
-                    <div>
-                         <p className='m-0 fs-13 fw-700'>{doctorDetail.name}</p>
-                         <p className="m-0 fs-10 text-secondary">{doctorDetail.specification}</p>
-                    </div>
-                   
-                </div>
-                <div className=''>
-                       <i className="fa-solid fa-angle-down text-secondary"></i>
-                    </div>
-         </div>
+        
        </div>
      </div>
    </>

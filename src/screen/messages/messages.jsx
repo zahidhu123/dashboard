@@ -180,7 +180,7 @@ export default function Messages() {
               <div className="col-lg-4">
                 <div className='active-wrapper1'>
                   <div className='position-relative'>
-                    <div className='profile-img-wrapper'>
+                    <div className='profile-img-wrapper-1'>
                       <img src={Charli} className="profile-img" alt="" />
                     </div>
                     <div className='fisher-wrapper p-4'>

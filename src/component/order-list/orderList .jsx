@@ -27,11 +27,11 @@ export default function OrderList(props) {
         <div className="table-header">
           <p className="label fw-bold w-25 mb-0">NAME</p>
 
-          <p className="label fw-bold flex-grow-1 mb-0 text-center">MOBILE</p>
+          <p className="label fw-bold flex-grow-1 mb-0 text-center">CHECK IN</p>
 
-          <p className="label fw-bold flex-grow-1 mb-0 text-center">AMOUNT</p>
+          <p className="label fw-bold flex-grow-1 mb-0  ms-4 text-center">CHECK OUT</p>
 
-          <p className="label fw-bold flex-grow-1 mb-0 text-center">ACTIONS</p>
+          <p className="label fw-bold flex-grow-1 mb-0 text-center">ROOM TYPE</p>
         </div>
         {expiredMember.map(() => {
           return (
@@ -44,21 +44,15 @@ export default function OrderList(props) {
                   <p className="label fw-bold  mb-0 text-primary">
                     Edgar Jones
                   </p>
-                  <p className="label mb-0">@tahseen</p>
+                  <p className="label mb-0">8770658057</p>
                 </div>
               </div>
 
-              <p className="label flex-grow-1 mb-0 text-center">8989898989</p>
+              <p className="label flex-grow-1 mb-0 text-center">23/05/2016</p>
 
-              <p className="label flex-grow-1 mb-0 text-center">$4300</p>
+              <p className="label flex-grow-1 mb-0 text-center">27/05/2016</p>
 
-              <p className="label flex-grow-1 mb-0 text-center">
-                <LinkButton
-                  label="View Profile"
-                  class="text-primary label"
-                  handleBtnClick={onClick}
-                />
-              </p>
+              <p className="label flex-grow-1 mb-0 text-center">Single</p>
             </div>
           );
         })}

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '../../component/button/button'
 
-export default function PaymentInformation() {
+export default function AddOrder() {
   return (
     <>
       <div className='m-box'>
