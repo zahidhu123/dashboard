@@ -15,11 +15,11 @@ export const options = {
 };
 
 export const data = {
-  labels: ["Red", "Blue", "Yellow"],
+  labels: ["Today", "This Week", "This Month"],
   datasets: [
     {
       label: "# of Votes",
-      data: [12, 19, 3],
+      data: [100, 300, 1500],
       backgroundColor: [
         "rgba(115, 103, 240, 100)",
         "rgb(13 83 252)",
@@ -33,7 +33,7 @@ export const data = {
 export default function PlanDistributionGraph() {
   return (
     <div className="card" style={{ position: "relative", minHeight: "400px" }}>
-      <h3 className="header-3 mb-3">Plan</h3>
+      <h3 className="header-3 mb-3">Earning</h3>
       <div style={{ position: "relative", height: "300px" }}>
         <Pie data={data} options={options} />
       </div>

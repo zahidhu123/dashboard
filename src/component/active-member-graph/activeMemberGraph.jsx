@@ -45,7 +45,7 @@ export default function ActiveMemberGraph() {
 
     return (
         <div className='card pb-5' style={{ height: "400px" }}>
-            <h3 className='header-3 mb-3'>Active Members</h3>
+            <h3 className='header-3 mb-3'>Booking by Month</h3>
             <Bar options={options} data={data} />
         </div>
     )

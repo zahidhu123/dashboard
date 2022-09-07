@@ -1,26 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { NavLink } from 'react-router-dom'
 import "./sideNav.css"
-import logo from '../../assets/logo.jpeg'
-import { doctorDetailsApi } from '../../service/apiService'
-import doctorImg from '../../assets/doctor.png'
+import { MdAirplaneTicket } from 'react-icons/md'
 
 export default function SideNav() {
-  const [doctorDetail, setdoctorDetail] = useState('')
 
-  useEffect(() => {
-   
-    getDoctorDetail();
-
-}, [])
-
-
-function getDoctorDetail() {
-  doctorDetailsApi().then((result) => {
-      console.log(result.data[0]);
-      setdoctorDetail(result.data[0])
-  });
-}
 
   return (
    <>
@@ -29,11 +13,11 @@ function getDoctorDetail() {
          <div className='d-flex justify-content-between  align-items-center px-2 pt-2 mb-3'>
        <div className='d-flex align-items-center '>
          <div>
-           <img src={logo} alt="" className='logo-img' />
+           <MdAirplaneTicket className='logo-img' />
          </div>
           <div>
-              <p className=' m-0 fw-bold fs-22 lh-23'>Zendenta</p>
-              <p className='m-0 fs-11 text-secondary '>cabut gigi tanpa sakit</p>
+              <p className=' m-0 fw-bold fs-22 lh-23'>Daily Booking</p>
+              <p className='m-0 fs-11 text-secondary '>Test</p>
           </div>
           
        </div>

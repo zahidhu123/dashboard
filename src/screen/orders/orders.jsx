@@ -18,8 +18,8 @@ export default function Orders() {
                                     <i className="fa-solid fa-magnifying-glass search-icon"></i>
                                     <input type="text" placeholder='search' className='rounded-pill search-input' />
                                 </div>
-                                <div className='add-btn'><i className="fa-regular fa-plus text-light fs-26 fw-700 "></i></div>
-                                <div className='notifaction-btn'><i className="fa-solid fa-bell text-secondary"></i>
+                               
+                                <div className='notifaction-btn ms-3'><i className="fa-solid fa-bell text-secondary"></i>
                                     <div className='red-dot'></div>
                                 </div>
                             </div>
