@@ -3,6 +3,8 @@ import { NavLink, Outlet } from 'react-router-dom'
 import { filesApi, patientDetailApi } from '../../service/apiService'
 import "./paymentList.css"
 import patientImg from '../../assets/patient.jpg'
+import FilterCard from '../../component/filter-card/filterCard'
+import OrderList from '../../component/order-list/orderList '
 
 export default function PatientList() {
     const [patientDetail, setPatientDetail] = useState('');
@@ -35,10 +37,10 @@ export default function PatientList() {
     return (
         <>
             <div className='patientList-wrapper'>
-                <div className='patient-nav'>
+                <div className='patient-nav1'>
                     <div className='d-flex justify-content-between align-items-center h-100'>
                         <div>
-                            <p className='m-0 fs-22 fw-500 ps-4'><i className="fa-regular fa-user px-2 fs-24 profile-icon"></i>{patientDetail.name}</p>
+                            <p className='m-0 fs-22 fw-500 ps-4'><i className="fa-regular fa-user px-2 fs-24 profile-icon"></i>Order List</p>
                         </div>
                         <div>
                             <div className='d-flex align-items-center'>
@@ -54,7 +56,7 @@ export default function PatientList() {
                         </div>
                     </div>
                 </div>
-                <div className='sub-nav'>
+                {/* <div className='sub-nav'>
                     <div className='d-flex justify-content-between mx-4 align-items-center h-100'>
                         <div>
                             <p className='m-0 text-primary fw-500 ps-2'>Patient List <span><i className="fa-solid fa-chevron-right mx-3 fs-20 text-secondary"></i></span> <span className='text-secondary'>{patientDetail.name}</span></p>
@@ -219,8 +221,18 @@ export default function PatientList() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
+                <div className='mx-4 my-3'>
+                    <div className="row">
+                        <div className="col-lg-9">
+                          <OrderList/>  
+                        </div>
+                        <div className="col-lg-3">
+                            <FilterCard/>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </>

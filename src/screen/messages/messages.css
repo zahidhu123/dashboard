@@ -1,7 +1,4 @@
-.m-box{
-    background-color: #f2f5f9;
-    height: 100vh;
-}
+
 .active-wrapper{
     background-color: #ffffff;
     padding: 25px 25px 20px 25px;
@@ -55,8 +52,14 @@
 }
 
 .profile-img{
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+
+.profile-img-wrapper {
     width: 100%;
-    height:220px;
+    height: 250px;
 }
 .fisher-wrapper{
     position: absolute;
@@ -102,7 +105,96 @@
     height: 60px;
 }
 
-.patient-nav1 {
+.message-content {
+    height: calc(100% - 65px);
     width: 100%;
-    height: 60px;
+    overflow-y: scroll;
 }
+
+.sender-area {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    padding: 10px 4px;
+}
+
+.sender-content {
+    max-width: 60%;
+    padding: 14px;
+    background-color: #49c496;
+    border-radius: 20px 20px 0px 20px;
+    font-size: 12px;
+    color: white;
+}
+
+.sender-content p {
+    color: white;
+    margin-bottom: 0px;
+}
+
+.sender-time p {
+    color: #c7ccd2;
+    margin-bottom: 0px;
+    font-size: 11px;
+    padding-right: 10px;
+}
+
+
+.receiver-area {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: start;
+    padding: 10px 4px;
+}
+
+.receiver-content {
+    max-width: 60%;
+    padding: 12px;
+    background-color: #f1f2f6;
+    border-radius: 0px 20px 20px 20px;
+    color: #868d98;
+    font-size: 12px;
+    margin: 0px;
+}
+
+.reveiver-content p {
+    color: black;
+    margin-bottom: 0px;
+    font-size: 14px;
+}
+
+.receiver-photo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    margin-right: 8px;
+}
+
+.message-footer {
+  height: 65px;
+  width: 100%;
+  padding: 20px;
+  background: white;
+  border-top: 5px solid #f2f5f9;
+}
+.search-message{
+    font-size: 13px;
+    font-weight: 500;
+    color: gray;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+.smile{
+    color: gray;
+    cursor: pointer;
+}
+
+.send-buton{
+    color: #0d53fd;
+    cursor: pointer;
+}
+

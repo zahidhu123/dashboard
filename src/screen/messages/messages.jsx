@@ -9,6 +9,7 @@ import Albert from '../../assets/albert.jpg'
 import Charli from '../../assets/charli.jpg'
 import Teeth1 from '../../assets/teeth1.jpg'
 import Teeth2 from '../../assets/teeth2.jpg'
+import { MdSend } from 'react-icons/md'
 
 export default function Messages() {
   return (
@@ -133,14 +134,55 @@ export default function Messages() {
             </div>
           </div>
           <div className="col-lg-9">
-            <div className="row">
-              <div className="col-lg-9">
-                <p>zahid</p>
+            <div className="row gx-0">
+              <div className="col-lg-8">
+                <div className='message-area active-wrapper1'>
+
+                  <div className='message-content'>
+                    {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((data) => {
+                      return <>
+                        <div className='receiver-area'>
+                          <div className=''>
+                            <img src={Patient} alt="" className='receiver-photo' />
+                          </div>
+                          <p className='receiver-content'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, alias itaque accusamus et laborum voluptatibus ut tempora exercitationem earum nesciunt?</p>
+                          <div className=''>
+                            <p>10.20 pm</p>
+                          </div>
+                        </div>
+
+                        <div className='sender-area'>
+                          <div className='sender-time'>
+                            <p>10.40 pm</p>
+                          </div>
+                          <div className='sender-content'>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          </div>
+                        </div>
+                      </>
+                    })}
+
+                  </div>
+                  <div className='message-footer'>
+                    <div className='d-flex'>
+                      <div className='d-flex w-75 align-items-center'>
+                        <i class="fa-regular fa-face-smile smile"></i>
+                        <input type="text" className='search-message m-0 w-100'  placeholder='Type a Message...'/>
+                      </div>
+                      <div className='d-flex justify-content-end w-25'>
+                        <i class="fa-solid fa-paperclip smile"></i>
+                        <MdSend className='send-buton ms-2 '  />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="col-lg-3">
+              <div className="col-lg-4">
                 <div className='active-wrapper1'>
                   <div className='position-relative'>
-                    <img src={Charli} className="profile-img" alt="" />
+                    <div className='profile-img-wrapper'>
+                      <img src={Charli} className="profile-img" alt="" />
+                    </div>
                     <div className='fisher-wrapper p-4'>
                       <p className='profile-name fw-bold m-0'>Aubrey Fisher</p>
                       <p className='profile-time m-0'>Last seen today at 13.42</p>

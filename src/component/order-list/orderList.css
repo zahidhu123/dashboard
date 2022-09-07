@@ -1,0 +1,30 @@
+.table-wrapper {
+    /* padding: ; */
+    border-radius: 8px;
+    overflow: 8px;
+    background-color: white;
+}
+
+.table-title-wrapper {
+    padding: 30px;
+}
+
+.table-header {
+    background-color: #f3f2f7;
+    padding: 6px 30px;
+    display: flex;
+    width: 100%;
+}
+
+.table-data-row {
+    padding: 12px 30px;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid whitesmoke;
+    align-items: center;
+}
+.small-avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}

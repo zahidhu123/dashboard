@@ -1,0 +1,37 @@
+.rounded-icon {
+  padding: 16px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.rounded-icon.primary {
+  background-color: #eeedfd;
+}
+
+.rounded-icon.primary svg {
+  color: #7367f0;
+}
+
+.rounded-icon.skyBlue {
+    background-color: #e0f9fc;
+  }
+  
+  .rounded-icon.skyBlue svg {
+    color: #00cfe8;
+  }
+
+  .rounded-icon.red {
+    background-color: #fceaeb;
+  }
+  
+  .rounded-icon.red svg {
+    color: #ea5455;
+  }
+
+  .rounded-icon.green {
+    background-color: var(--lightGreenBg);
+  }
+  
+  .rounded-icon.green svg {
+    color: var(--green);
+  }
